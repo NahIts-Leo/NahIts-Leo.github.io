@@ -1,0 +1,353 @@
+<h1>Hello I'm Leo Kai Jie</h1>
+
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- EDIT THIS: Your project title -->
+    <title>Justin Bieber FanPage</title>
+    <meta name="description" content="My awesome school project website">
+
+    <style>
+        /* Basic styling - you can modify these */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f703ce;
+            color: white;
+            min-height: 100vh;
+        }
+        
+        /* Header styles */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 0, 153, 0);
+            padding: 40px 0;
+            z-index: 1000;
+        }
+        
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 45px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Main content area */
+        .main-content {
+            margin-top: 80px;
+            min-height: calc(100vh - 80px);
+            position: relative;
+        }
+        
+        /* Hero section with background */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .hero-content {
+            text-align: center;
+            z-index: 10;
+        }
+        
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        
+        /* Interactive windows (like the original) */
+        .info-window {
+            position: absolute;
+            background: rgb(255, 0, 191);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            cursor: move;
+            min-width: 200px;
+            z-index: 100;
+        }
+        
+        .window-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .window-content {
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+        
+        .window-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .btn-yes {
+            background: #007bff;
+            color: white;
+        }
+        
+        .btn-no {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            color: #999;
+        }
+        
+        /* Content sections */
+        .content-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #111;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        /* Media player area */
+        .media-section {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            height: 200px;
+            background: rgba(0,0,0,0.8);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .media-section {
+                position: relative;
+                width: 100%;
+                margin: 20px 0;
+            }
+            
+            .info-window {
+                position: relative;
+                margin: 20px auto;
+                transform: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-inner" style="justify-content: center;">
+
+            <!-- EDIT THIS: Your project logo/title -->
+            <a href="#" class="logo">JUSTIN BIEBER FANPAGE</a>
+            
+            <div style="width: 35px;"></div> <!-- Spacer for centering -->
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" style="background-image: url('Justin-Bieber-HD-Desktop-Wallpaper-10103.jpg');">
+            <div class="hero-content">
+                <!-- EDIT THIS: Your main title and subtitle -->
+                <h1 class="hero-title">I Love Justin Bieber</h1>
+                <p class="hero-subtitle">This is a Justin Bieber fanpage all about him (mostly pics hehe)</p>
+            </div>
+            
+            <!-- Media Section (like the YouTube player) -->
+            <div class="media-section">
+                <!-- EDIT THIS: Replace with your image, video, or content -->
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/fXivMSJm_kA" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <!-- Interactive Windows (like the original news windows) -->
+            <!-- EDIT THIS: Customize your popup windows -->
+            <div class="info-window" style="top: 20%; left: 10%; transform: scale(1.2);" id="window1">
+                <button class="close-btn" onclick="closeWindow('window1')">&times;</button>
+                <div class="window-title">Justin Bieber YouTube</div>
+                <div class="window-content">
+                    <a href="https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" target="_blank"><img src="channels4_profile.jpg" width="200" height="200" alt="Popup Image" style="width: 100%; border-radius: 10px;"></a>
+                </div>
+                <div class="window-buttons">
+                    <button class="btn btn-yes" onclick="window.open('https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ', '_blank')">JusTube</button>
+                    <button class="btn btn-no" onclick="closeWindow('window1')">Close</button>
+                </div>
+            </div>
+            
+            <div class="info-window" style="top: 40%; right: 15%; transform: scale(1.1);" id="window2">
+                <button class="close-btn" onclick="closeWindow('window2')">&times;</button>
+                <div class="window-title">Justin Bieber Instagram</div>
+                <div class="window-content">
+                    <a href="https://www.instagram.com/lilbieber/?hl=en" target="_blank"><img src="SKYLRK_pink_pfp.webp" width="200" height="200" alt="Popup Image" style="width: 100%; border-radius: 10px;"></a>
+                </div>
+                <div class="window-buttons">
+                    <button class="btn btn-yes" onclick="window.open('https://www.instagram.com/lilbieber/?hl=en', '_blank')">JusTagram</button>
+                    <button class="btn btn-no" onclick="closeWindow('window2')">Dismiss</button>
+                </div>
+            </div>
+            
+            <div class="info-window" style="bottom: 20%; left: 20%; transform: scale(0.9);" id="window3">
+                <button class="close-btn" onclick="closeWindow('window3')">&times;</button>
+                <div class="window-title">Justin Bieber Official Site</div>
+                <div class="window-content">
+                    <a href="https://www.justinbiebermusic.com/" target="_blank"><img src="HD-wallpaper-justin-black-and-white-justin-bieber-justinbieber-music-pop-singer-thumbnail.jpg" width="200" height="200" alt="Popup Image" style="width: 100%; border-radius: 10px;"></a>
+                </div>
+                <div class="window-buttons">
+                    <button class="btn btn-yes" onclick="">JustOfficial</button>
+                    <button class="btn btn-no" onclick="window.open('https://www.justinbiebermusic.com/', '_blank')">Close</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Content Sections -->
+        <section id="about" class="content-section">
+            <!-- EDIT THIS: Your about section -->
+            <h2 class="section-title">Justin Bieber Gallery</h2>
+            <!-- <p style="text-align: center; font-size: 1.2rem; line-height: 1.6;">
+            </p> -->
+            <div>
+                <img src="1_Gdj0OI-9g_St47Zd8EuPgg.jpg" alt="Justin Bieber 1" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+                <img src="justin-bieber-performs-on-the-street-august-20-2007-in-news-photo-109750170-1543261921.avif" alt="Justin Bieber 2" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+                <img src="GettyImages-165443495.webp" alt="Justin Bieber 3" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+                <img src="singer-justin-bieber-attends-the-40th-american-music-awards-news-photo-156665238-1543262478.avif" alt="Justin Bieber 4" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+                <img src="in-this-handout-photo-provided-by-miami-dade-police-news-photo-464614701-1543262378.avif" alt="Justin Bieber 5" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+                <img src="singer-justin-bieber-attends-the-china-through-the-looking-news-photo-472253196-1543262052.avif" alt="Justin Bieber 6" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+                <img src="justin-bieber-is-seen-on-february-26-2017-in-los-angeles-news-photo-645911038-1543264208.avif" alt="Justin Bieber 7" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+                <img src="justin-bieber-attends-the-2018-nba-all-star-game-celebrity-news-photo-919133938-1543263047.avif" alt="Justin Bieber 8" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+                <img src="justin-bieber-and-hailey-bieber-attend-the-premiere-of-news-photo-1721856168.avif" alt="Justin Bieber 9" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+                <img src="justin-bieber-is-seen-leaving-bar-pitti-on-june-23-2024-in-news-photo-1721856450.avif" alt="Justin Bieber 10" style="display: block; margin: 10px auto;max-height: 700px;max-width: 700px;">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- EDIT THIS: Your footer information -->
+        <p>&copy; 2024 Justin Bieber FanPage Project. Created by Kai Jie</p>
+    </footer>
+
+    <script>
+        // Menu toggle function
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+        
+        // Close window function
+        function closeWindow(windowId) {
+            document.getElementById(windowId).style.display = 'none';
+        }
+        
+        // Make windows draggable (simplified version)
+        let draggedElement = null;
+        
+        document.querySelectorAll('.info-window').forEach(window => {
+            window.addEventListener('mousedown', function(e) {
+                if (e.target.classList.contains('close-btn') || e.target.classList.contains('btn')) return;
+                
+                draggedElement = this;
+                const rect = this.getBoundingClientRect();
+                const offsetX = e.clientX - rect.left;
+                const offsetY = e.clientY - rect.top;
+                
+                function onMouseMove(e) {
+                    if (draggedElement) {
+                        const x = e.clientX - offsetX;
+                        const y = e.clientY - offsetY;
+                        draggedElement.style.left = x + 'px';
+                        draggedElement.style.top = y + 'px';
+                        draggedElement.style.right = 'auto';
+                        draggedElement.style.bottom = 'auto';
+                    }
+                }
+                
+                function onMouseUp() {
+                    draggedElement = null;
+                    document.removeEventListener('mousemove', onMouseMove);
+                    document.removeEventListener('mouseup', onMouseUp);
+                }
+                
+                document.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('mouseup', onMouseUp);
+            });
+        });
+    </script>
+</body>
+</html>
